@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    height: 640px;
+    width: 640px;
+    display: grid;
+
+}
+
+.square-div {
+    background-color: blue;
+}
+
+/* creates pixelated trail */
+.changeColor {
+    background-color: orange;
+}
+
+.reset {
+    display: flex;
+    width: 150px;
+    height: 80px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
