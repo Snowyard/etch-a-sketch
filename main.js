@@ -23,7 +23,14 @@ function paintBoard() {
     const divs = document.querySelectorAll('.square-div');
     divs.forEach(div => {
         div.addEventListener('mouseenter', () => {
-            div.classList.add('changeColor');
+            /*div.classList.add('changeColor');*/
+            function getRandomRgb() {
+                let r = (Math.round(Math.random()*255));
+                let g = (Math.round(Math.random()*255));
+                let b = (Math.round(Math.random()*255));
+                return 'rgb(' + r + ',' + g + ',' + b + ')';
+              }
+            div.style.backgroundColor = getRandomRgb();
         })
     })
 }
